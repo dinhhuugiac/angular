@@ -1,0 +1,48 @@
+
+
+<div class="container">
+  <div class="header">
+      <img src="assets/header-logo.png" alt="header logo">
+      <span>ĐỒ ÁN </span>
+  </div>
+  <div class="content">
+      <div class="menu-logo">WELCOME TO HOME</div>
+  </div>
+  <div class="room-content">
+      <div class="para">
+          <ul>
+              <li id="toppara">
+                  <img src="assets/temperature.png" alt="">
+                  <span>Temperature:</span>
+                  <span id="temp" style="color: red;">None</span>
+              </li>
+              <li>
+                  <img src="assets/humid.png" alt="" id="doam">
+                  <span>Humidity:</span>
+                  <span id="humid" style="color: blue;">None</span>
+              </li>
+
+          </ul>
+      </div>
+
+      <div class="controller">
+        <div class="devices-controller">
+          <img [src]="lampImage" alt="">
+          <div>
+            <span>Light</span>
+            <button (click)="turnOn()" [disabled]="isLightOn" class="custom-button on-button">Bật</button>
+            <button (click)="turnOff()" [disabled]="!isLightOn" class="custom-button off-button">Tắt</button>
+          </div>
+        </div>
+      </div>
+
+
+  <div class="footer">
+      <div class="name-box">
+          <span class="sv2">ĐINH HỮU GIÁC       MSSV: 20119069</span>
+      </div>
+      <div class="logo">
+          <img class="logo-spk" title="spk-logo" src="assets/logo-spk.jpg" alt="logo-spk">
+      </div>
+  </div>
+</div>
